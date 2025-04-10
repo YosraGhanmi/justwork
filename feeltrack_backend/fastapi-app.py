@@ -589,6 +589,17 @@ async def schedule_supportive_messages(background_tasks: BackgroundTasks = None)
         conn.close()
 
 
+
+@app.post("/generate-image")
+async def generate_image(request: GenerationRequest):
+    """Generate image based on theme and story_id."""
+    image = pipe(request.theme).images[0]
+    filename = f"{request.story_id}_generated_image.png"
+    image.save(filename)
+    
+    return {"message": "Image generated successfully", "file": filename}
+
+
 # API endpoints
 @app.post("/register", response_model=UserResponse)
 async def register(user: UserCreate):
