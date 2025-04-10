@@ -1,0 +1,20 @@
+Mental Health Support App Backend
+This is the backend for a mental health and emotional wellbeing support application, created for the AI Hackathon (April 8-10, 2025). The app features a supportive AI chatbot that provides positive reframing and periodic supportive messages to users.
+
+Features
+🤖 AI Chatbot: An empathetic AI chatbot that listens to users' concerns and provides supportive responses
+✨ Positive Reframing: Automatically reframes users' messages from a positive perspective
+🔔 Supportive Notifications: Sends periodic supportive messages based on recent conversation history
+🔐 User Authentication: Secure JWT-based authentication system
+⚙️ User Preferences: Customizable notification frequency and active hours
+Tech Stack
+Nextjs
+tailwind
+
+
+
+#########################################
+after you clone :
+npm install => install node modules
+npm run build => to build .next 
+npm run dev
